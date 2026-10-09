@@ -49,3 +49,9 @@ npm run preview
 ```
 
 The preview command prints the local URL to open.
+
+## Deploy to GitHub Pages
+
+The GitHub Actions workflow builds the app and publishes the `dist/` directory to GitHub Pages whenever changes are pushed to `main`.
+
+For the first deployment, open the repository's **Settings → Pages** and set **Build and deployment → Source** to **GitHub Actions**. After that, check the **Actions** tab for deployment progress. The published site is <https://anujsec.github.io/netsim-lab/>.
