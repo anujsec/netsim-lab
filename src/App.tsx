@@ -1,8 +1,11 @@
 import { useState } from "react";
 import {
+  AtSign,
   BookOpenCheck,
+  BriefcaseBusiness,
   Calculator,
   Cable,
+  CodeXml,
   DoorOpen,
   Fingerprint,
   Gauge,
@@ -214,8 +217,40 @@ export default function App() {
             {active === "synflood" && <SynFlood />}
             {active === "udp" && <UdpLab />}
             {active === "attacksurface" && <AttackSurface />}
-            <footer className="mt-10 pb-4 text-center text-[11px] text-slate-700">
-              Built for learning — all IPs, domains and packet data are simulated.
+            <footer className="mt-10 flex flex-col items-center gap-3 border-t border-slate-800 pt-5 pb-4 text-center text-xs text-slate-500 sm:flex-row sm:justify-between sm:text-left">
+              <div>
+                <p>Built for learning — all IPs, domains and packet data are simulated.</p>
+                <p className="mt-1">Built by Anuj Pandey</p>
+              </div>
+              <nav aria-label="Anuj Pandey's social profiles" className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
+                <a
+                  href="https://www.instagram.com/_anuj_pandey_16/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-1.5 transition-colors hover:text-slate-200 focus-visible:text-slate-200"
+                >
+                  <AtSign aria-hidden="true" className="h-3.5 w-3.5" />
+                  <span>_anuj_pandey_16</span>
+                </a>
+                <a
+                  href="https://github.com/anujsec"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-1.5 transition-colors hover:text-slate-200 focus-visible:text-slate-200"
+                >
+                  <CodeXml aria-hidden="true" className="h-3.5 w-3.5" />
+                  <span>anujsec</span>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/anuj-pandey-6743ab418/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-1.5 transition-colors hover:text-slate-200 focus-visible:text-slate-200"
+                >
+                  <BriefcaseBusiness aria-hidden="true" className="h-3.5 w-3.5" />
+                  <span>LinkedIn</span>
+                </a>
+              </nav>
             </footer>
           </main>
         </div>
